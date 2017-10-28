@@ -6,7 +6,8 @@ RUN apt-get update && \
     apt-get install -y git-core python php-cli php-curl nodejs curl && \
     node -v && \
     npm -v && \
-    npm install apigeetool -g
+    npm install apigeetool -g \
+    npm install openapi2apigee -g
 
 VOLUME /code
 WORKDIR /code
